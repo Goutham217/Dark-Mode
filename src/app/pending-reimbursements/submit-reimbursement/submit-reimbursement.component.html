@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+            <div>
+                <div class="container">
+                 <form #myForm="ngForm">
+                  <div class="card mt-5">
+                    <div class="card-header bg-light">
+                        <h4>Submit Reimbursement Form</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="mb-3 mt-3">
+                            <label for="eId" class="form-label">Employee ID:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="rID"  
+                                name="EmployeeId"
+                                [(ngModel)]="newReimbursement.employeeId"
+                                >
+
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="mId" class="form-label">Manager ID:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="mID"  
+                                name="ManagerId"
+                                [(ngModel)]="newReimbursement.managerId" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="rAmount" class="form-label">Amount:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="rAmount" 
+                                placeholder="Enter Amount" 
+                                name="ReimbursementAmount"
+                                [(ngModel)]="newReimbursement.amount"required
+                                #rmAmount = "ngModel">
+                                <div *ngIf="!rmAmount.valid && rmAmount.touched" class="text-danger small">
+                                    Amount Required!
+                                </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rReason" class="form-label">Reason:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="rReason" 
+                                placeholder="Enter Reason" 
+                                name="Reimbursement Reason"
+                                [(ngModel)]="newReimbursement.reason"required
+                                #rmReason = "ngModel">
+                                <div *ngIf="!rmReason.valid && rmReason.touched" class="text-danger small">
+                                    Reason Required!
+                                </div>
+                        </div>
+                
+
+                        <button type="button" class="btn btn-primary" (click)="submitInfo()">Submit Reimbursement</button>
+                    </div>
+                    <div class="card-footer bg-light">
+                
+                    </div>
+                  </div>
+                 </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+    </div>
+</div>
