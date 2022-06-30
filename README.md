@@ -54,3 +54,20 @@ Technologies used are:
 * Isaac Suttle
 * Fozeya-Nikka Alviar
 * Akshay Kumar
+
+
+#dark mode resources:
+
+https://medium.com/@lisa.berteau.smith/dont-be-left-in-the-dark-how-to-design-a-dark-mode-with-angular-material-theme-7046920af8fb
+
+https://material.angular.io/components/slide-toggle/overview
+
+https://www.youtube.com/watch?v=n-OQkC4do5M
+
+https://www.youtube.com/watch?v=XIUv27nYcLE
+
+https://www.youtube.com/watch?v=pxWRRM4EmQg
+
+https://dev.to/muhammadawaisshaikh/creating-a-dark-light-toggle-mode-on-your-angular-app-3k83
+
+https://stackblitz.com/edit/angular-dark-mode-v3-example?file=src%2Fapp%2Fapp.component.ts
